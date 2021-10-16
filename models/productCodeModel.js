@@ -9,7 +9,8 @@ const ProductCodeSchema = new Schema({
     categoryID:{
         type:String,
         ref:"category"
-    }
+    },
+    description: { type:String },
 
 },{
     collection:"productCode"

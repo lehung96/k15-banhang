@@ -1,0 +1,3 @@
+model => Đảm nhận tương tác dữ liệu 
+view  => hiển thị dữ liệu 
+controller => gửi và nhận yêu cầu 

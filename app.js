@@ -5,14 +5,20 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 //khai báo router user 
-var UserRouter = require('./router/UserRouter')
+const UserRouter = require('./router/UserRouter');
+
 
 app.get('/', function (req, res) {
   res.send('Hello World')
 })
  
-// sử dung đường dẫn router 
+// sử dung đường dẫn UserRouter 
 app.use('/api',UserRouter)
+
+
+
+
+
 app.listen(POST, (err)=>{
     if(err){
         console.log(err);
