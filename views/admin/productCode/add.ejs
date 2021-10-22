@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add Product</title>
+
+    <link rel="stylesheet" href="/public/backend/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h2>Thêm với ProductCode</h2>
+    <form action="./add" method="POST" enctype="multipart/form-data">
+        <div class="form-group"></div>
+            <label for="exampleFormControlInput1">Tên sản phẩm</label>
+            <input type="text" name="productName" placeholder="Nhập tên sản phẩm "/>
+        </div> 
+        <div class="form-group"></div> 
+             <label for="exampleFormControlInput2">Tên thương hiệu</label>
+             <input type="text" name="brand" placeholder="Nhập tên thương hiệu "/>
+       </div>
+       <div class="form-group">
+             <label for="exampleFormControlInput2">Mã code</label>
+             <input type="number" name="code" placeholder="Nhập mã sản phẩm "/>
+       </div>    
+       <div class="form-group">
+            <label for="exampleInputEmail1">Ảnh chi tiết sản phẩm</label>
+            <input type="file" name="thumbnail"/>
+        </div>
+        
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Tên phân loại sản phẩm</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="categoryID">
+              <option>Điện thoại </option>
+              <option>Thời trang Nam</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mô tả sản phẩm</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description" placeholder="Nhập mô tả sản phẩm "></textarea>
+          </div>
+
+        <input type="submit"  value="Thêm mới"/>
+    </form>
+</body>
+</html>
